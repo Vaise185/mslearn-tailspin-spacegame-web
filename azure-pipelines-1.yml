@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: MyMachine
+  name: MyMachine
 
 variables:
   buildConfiguration: 'Release'
