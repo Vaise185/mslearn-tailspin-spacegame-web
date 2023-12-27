@@ -1,5 +1,10 @@
-- task: DotNetCoreCLI@2
-  displayName: 'Build project'
+
+
+trigger:
+- main
+
+steps:
+- task: 'DotNetCoreCLI@2'
   inputs:
     command: 'build'
     projects: '**/*.csproj'
